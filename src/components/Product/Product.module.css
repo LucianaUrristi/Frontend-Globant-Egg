@@ -1,0 +1,233 @@
+.productContainer {
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid springgreen; */
+    height: inherit;
+    min-height: inherit;
+}
+
+.productColumnsContainer {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.productsImagenes{
+    max-width: 100%;
+    overflow: hidden; /* Asegúrate de que las imágenes no desborden el contenedor */          
+}
+
+.productImagesBlock {
+    /* Definimos flex 1 las 3 columnas para que ocupen el mismo espacio*/
+    flex: 1;
+}
+
+
+.productImagenesBlock .productsThumbnailContainer {
+    max-width: 100%;
+    overflow: hidden;
+    /* Mantiene la imagen dentro del contenedor */
+    /* margin: 5px; /* Ajusta el margen según sea necesario 
+    border: 1px solid; Opcional, si deseas bordes */
+}
+
+.productsThumbnailContainer img {
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+    object-fit: contain;
+    /* Asegura que la imagen se ajuste completamente dentro del contenedor */
+    object-position: center center;
+    /* Centra la imagen en el contenedor */
+    height: 50px;
+    cursor: pointer;
+}
+
+#selectedThumbnail {
+    width: 350px;
+}
+
+.productImagesBlock .productsThumbnailContainer .active img {
+    height: 100%;
+}
+
+.productsDescriptionBlock {
+    /* revisar si esta bien el nombre*/
+    flex: 1;
+}
+
+.productDescriptionBlock .title {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 0;
+}
+
+.productDescriptionBlock .label {
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* .marca {
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+}
+
+.title{
+    color: #555;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 0px;
+    word-wrap: break-word;
+} */
+.productsDescriptionBlock .selector {
+    /* Ordenamos los labels y inputs verticalmente */
+    margin-top: 30px;
+}
+
+.productDescriptionSelector fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.productDescriptionSelector select {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 10px;
+    border: 1px #eaeaea solid;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.productDescription .description {
+    margin-top: 30px;
+    line-height: 20pxs;
+}
+
+/* CHECKOUT */
+.productsCheckoutBlock {
+    /* Definimos flex 1 las 3 columnas para que ocupen el mismo espacio*/
+    flex: 1;
+}
+
+.productsCheckoutContainer {
+    background-color: #ebebeb;
+    padding: 33px;
+    /*Espaciado interno*/
+    border-radius: 2px;
+    /*Bordes lijeramente redondeados*/
+}
+
+.productsCheckoutTotalLabel {
+    color: #ff3b3c;
+}
+
+.productsCheckoutTotalPrice {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.productsCheckoutDescription {
+    line-height: 20.4px;
+    /*Espaciado de linea para mejorara la legibilidad*/
+    word-wrap: break-word;
+    /*Asegura que el texto no desborde del contenedor*/
+}
+
+.productsCheckoutPolicyList {
+    padding: 0;
+    list-style-type: none;
+    /* Elimina los marcadores de lista*/
+    margin-bottom: 30px;
+    /*Espacio debajo de la lista*/
+}
+
+.productsCheckoutPolicyList li {
+    display: flex;
+    /*Alineacion horizontal de iconos y texto*/
+    margin: 15px 0;
+    /*Espacio entre elementos de la lista*/
+}
+
+.productsCheckoutPolicyList li .productsPolicyIcon {
+    margin-right: 15px;
+    /*Espacio entre el icono y el texto*/
+}
+
+.checkoutProcess {
+    row-gap: 20px;
+}
+
+.checkoutProcess .top {
+    display: flex;
+    /*Alinea el input y el boton horizontalmente*/
+    margin-bottom: 10px;
+    /*Espacio debajo del grupo superior*/
+    gap: 5px;
+}
+
+.productsCheckoutProcess .productsTop input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    width: 62px;
+    margin-right: 10px;
+    padding: 0 10px 0 20px;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.productsBtnPrimary {
+    width: 100%;
+    background: #ff3b3c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.productsBtnOutline {
+    width: 100%;
+    border: 1px solid #ff3b3c;
+    color: #ff3b3c;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 10px;
+}
+
+/*SALES BLOCK*/
+
+.productsSalesBlock {
+    margin-top: 80px;
+}
+
+.productsSalesTitle h2 {
+    border-block-end: 1px solid #a4a3a5;
+    text-align: center;
+    /* Alineación central para el título */
+    margin-bottom: 42px;
+    /* Espacio debajo del título */
+    font-size: 30px;
+    /* Tamaño de fuente grande para captar atención */
+}
+
+.productsSalesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

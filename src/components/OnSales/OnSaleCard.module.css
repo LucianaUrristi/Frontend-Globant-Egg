@@ -1,0 +1,43 @@
+.outerBorderOnSaleCard {
+    border: 2px solid #ccc; 
+    
+    padding: 2%;
+}
+
+.innerBorderOnSaleCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+.productImgOnSaleCard {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    
+}
+.productCardOnSaleCard {
+    background-color: #f0f0f0;
+    border-radius: 14px; /*redondea las puntas*/
+    /* max-width: 25%; porcentaje respecto a la columna*/
+    width: auto;
+}
+
+.productTextOnSaleCard {
+    font-weight: normal;
+}
+
+.fullPriceText{
+    color: gray;
+}
+
+#fullPriceNumber{
+    text-decoration: line-through;
+}
+
+.greenTextOnSaleCard {
+    color: green;
+}

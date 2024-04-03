@@ -1,0 +1,35 @@
+.footer {
+    min-height: 368px;
+    background-color: #7525a7;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+.columnsContainer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.col ul {
+    list-style-type: none; /*saca los puntos antes de la palabra*/
+    padding: 0;
+    
+    
+}
+.colMainItem {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.copyRight {
+    border-top: 1px solid #ba53fb;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
