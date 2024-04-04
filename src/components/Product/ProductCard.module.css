@@ -6,8 +6,9 @@
     /* max-width: 25%; porcentaje respecto a la columna*/
     width: auto;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    color: black;
     padding: 5%;
+    text-decoration: none;
 }
 .pCImg {
     width: 100%;

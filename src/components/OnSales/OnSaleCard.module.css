@@ -1,14 +1,43 @@
-.outerBorderOnSaleCard {
+.productCardOnSaleCard {
+    background-color: #f0f0f0;
+    border-radius: 14px; /*redondea las puntas*/
+    /* max-width: 25%; porcentaje respecto a la columna*/
+    width: auto;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 5%;
+    text-decoration: none;
+
+}.outerBorderOnSaleCard {
     border: 2px solid #ccc; 
     
     padding: 2%;
 }
+.productTitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22.27px;
+    word-wrap: break-word;
+    display: block;
+}
 
-.innerBorderOnSaleCard {
+.productDescription {
+    font-size: 12px;
+    font-weight: 400;
+    color: #383838;
+    margin-bottom: 6px;
+}
+
+.productInfo {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* .innerBorderOnSaleCard {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 5%;
-}
+} */
 
 .productImgOnSaleCard {
     width: 100%;
@@ -19,12 +48,6 @@
     border-top-right-radius: 14px;
     
 }
-.productCardOnSaleCard {
-    background-color: #f0f0f0;
-    border-radius: 14px; /*redondea las puntas*/
-    /* max-width: 25%; porcentaje respecto a la columna*/
-    width: auto;
-}
 
 .productTextOnSaleCard {
     font-weight: normal;
@@ -34,10 +57,24 @@
     color: gray;
 }
 
+.disPrice{
+    font-size: 22px;
+    font-weight: 700;
+    flex: 1;
+}
+
 #fullPriceNumber{
     text-decoration: line-through;
 }
 
 .greenTextOnSaleCard {
-    color: green;
+    font-size: 12px;
+    font-weight: 700;
+    color: #428f13;
+}
+
+.leyend{
+    font-size: 12px;
+    font-weight: 700;
+    color: red;
 }

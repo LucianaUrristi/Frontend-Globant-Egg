@@ -13,7 +13,7 @@ function ProductCard(props) {
                         <span className={styles.pCTitle}>{ title }</span>
                         <span className={styles.pCDescription}>{ color }</span>
                         <div className={styles.pCPriceBlock}>
-                            <span className={styles.pCPrice}>{ price }</span>
+                            <span className={styles.pCPrice}> ${ price }</span>
                             {/* <span className={styles.pCDiscount}>50% Off</span> */}
                         </div>
                         <div className={styles.pCTaxPolicy}>

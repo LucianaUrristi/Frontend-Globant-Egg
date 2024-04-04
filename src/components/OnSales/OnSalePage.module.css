@@ -5,10 +5,11 @@ main {
 }
 
 .generalContainerOnSalePage {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
     height: inherit;
     min-height: inherit;
+    padding: 20px;
 }
 
 /* Bloque de productos*/
@@ -16,4 +17,5 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    
 } 

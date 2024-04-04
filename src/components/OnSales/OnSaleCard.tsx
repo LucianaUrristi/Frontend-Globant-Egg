@@ -2,19 +2,23 @@ import style from "./OnSaleCard.module.css";
 
 
 function OnSaleCard(props) {
-    const { title, price, image } = props   
+    const { title, color, price, image } = props   
     
     
     return(
         <article className={style.productCardOnSaleCard}>
-            <div className={style.innerBorderOnSaleCard}>
-                <img src={ image } className={style.productImgOnSaleCard}/>
+            <img src={ image } className={style.productImgOnSaleCard}/>
+            <div className={style.productInfo}>
+                <span className={style.productTitle}>{ title }</span>
+                <span className={style.productDescription}>{ color }</span>
                 <div className={style.productTextOnSaleCard}>
-                    <h3>{ title }</h3>
-                    <p className={style.fullPriceText}>Desde <span className={style.fullPriceNumber}>{ price }</span></p>
-                    <h3 id="dis-price">{ price } <span className={style.greentext}>35% OFF</span></h3>
-                    <p><span className={style.greenTextOnSaleCard}>Compra y paga en pesos!</span></p>
+                    <span className={style.fullPriceText}>Desde <span className={style.fullPriceNumber}>{ price }</span></span>
+                 </div>   
+                <div>
+                    <span className={style.disPrice}>$ { price } <span className={style.greenTextOnSaleCard}>35% OFF</span></span>
                 </div>
+                <div className={style.leyend}>Compra y paga en pesos!</div>
+
             </div>
         </article>
 
