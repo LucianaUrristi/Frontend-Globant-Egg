@@ -1,7 +1,7 @@
 {
   "name": "virtual-store",
   "private": true,
-  "homepage": "http://lucianaurristi.github.io/",
+  "homepage": "http://lucianaurristi.github.io/Frontend-Globant-Egg/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
