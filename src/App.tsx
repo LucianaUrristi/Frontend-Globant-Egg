@@ -13,7 +13,8 @@ const browserRouter = createBrowserRouter([
     {path:"/product/:id", element: <Product />},
     {path:"/ofertas.html", element: <OnSalePage/>},
     {path:"/*", element: <NotFound/>}
-  ]);
+  ], {basename: '/Frontend-Globant-Egg'});
+
 
 function App() {
   
