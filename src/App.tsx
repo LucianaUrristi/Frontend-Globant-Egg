@@ -9,7 +9,7 @@ import OnSalePage from "./views/OnSalePage.tsx";
 
 const browserRouter = createBrowserRouter([
     {path: "/", element: <Home /> },
-    {path: "/cart", element: <Cart /> },
+    {path:"/cart", element: <Cart /> },
     {path:"/product/:id", element: <Product />},
     {path:"/ofertas.html", element: <OnSalePage/>},
     {path:"/*", element: <NotFound/>}
